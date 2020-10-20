@@ -4,11 +4,26 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
-  font-family: 'Overpass', sans-serif;
+  font-family: Overpass, sans-serif;
 }
 
 *, *::before, *::after {
   box-sizing: inherit;
+}
+
+body {
+  background-image: linear-gradient(#ff9500, #ff5e3a);
+  margin: 1.5rem;
+}
+
+h1 {
+  color: #fff;
+  padding: 6vmin;
+  text-align: center;
+}
+
+h2 {
+  color: #fff;
 }
 
 ul {
@@ -17,6 +32,7 @@ ul {
   justify-items: center;
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 
 a {
@@ -24,11 +40,7 @@ a {
   flex-direction: column;
   align-items: center;
   color: #76a500;
-}
-
-a:hover,
-a:focus {
-  color: #acc300;
+  text-decoration: none;
 }
 
 .icon {
@@ -43,5 +55,15 @@ a:focus {
   position: absolute;
   top: 0;
   width: 100%;
-  fill: currentColor;
+  fill: rgba(255, 255, 255, .7);
+}
+
+p {
+  color: #fff;
+  padding: 1rem;
+}
+
+.learn-more {
+  color: #fff;
+  border: .2rem solid #fff;
 }
