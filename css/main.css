@@ -86,3 +86,75 @@ use {
   width: 8rem;
   height: 8rem;
 }
+
+svg {
+  padding-bottom: .5rem;
+}
+
+i {
+  color: #ff9500;
+}
+
+i:hover {
+  fill: red;
+}
+
+@media only screen and (min-width: 38em) {
+
+  h1 {
+    text-align: center;
+    margin: 2rem;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  ul {
+    display: grid;
+    grid-template-areas: "1 2 3";
+  }
+
+  ul:nth-child(1) {
+    grid-area: 1;
+  }
+
+  ul:nth-child(2) {
+    grid-area: 2;
+  }
+
+  ul:nth-child(3) {
+    grid-area: 3;
+  }
+
+  svg {
+    padding-bottom: 0;
+  }
+
+  p {
+    margin: .5rem;
+  }
+
+  h2 {
+    margin: 0 1.25rem;
+    margin-bottom: 1.5rem;
+  }
+
+  a {
+    text-align: center;
+  }
+
+  h3 {
+    margin-top: 2rem;
+  }
+
+}
+
+@media only screen and (min-width: 90em) {
+
+  h1 {
+    padding: 5rem 0;
+  }
+
+}
